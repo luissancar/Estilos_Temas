@@ -19,6 +19,7 @@
 
     <style name="MiEstilo.Her">
         <item name="android:textColor">#0000FF</item>
+        <item name="android:background">@drawable/shape1</item>
     </style>
 
 

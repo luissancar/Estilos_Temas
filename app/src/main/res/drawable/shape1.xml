@@ -2,16 +2,64 @@
 
 <shape xmlns:android="http://schemas.android.com/apk/res/android" >
 
+
+
+    <!--
+Gradient: Con esta etiqueta podremos definir un efecto degradado, de un color a otro,
+sobre el objeto en el que apliquemos el shape. Este degradado puede ser lineal,
+pudiendo definir el punto inicial y el final, o circular.
+Para definir el tipo de Gradient que queremos utilizar lo haremos a través del atributo android:type
+    -->
     <gradient
         android:angle="90"
+        android:type="linear"
         android:endColor="#C5D9F4"
-        android:startColor="#DCE5FD" />
-
+        android:startColor="#000000"
+        android:centerColor="#FFFFFF"/>
+<!--
+Corners: Nos sirve para dar una forma redondeada a las esquinas del objeto sobre el que se aplique
+el Shape. En el atributo android:radius, principal atributo de la etiqueta, definiremos
+el ángulo que queremos aplicar sobre el corner. También tiene otros atributos, como
+android:topLeftRadius, android:topRightRadius, android:bottomLeftRadius y android:bottomRightRadius.
+-->
     <corners
         android:bottomLeftRadius="50dp"
         android:bottomRightRadius="50dp"
         android:topLeftRadius="5dp"
-        android:topRightRadius="25dp">
-    </corners>
+        android:topRightRadius="25dp"/>
+
+<!--
+Padding: El padding es un margen que se aplica internamente al control,
+al establecerlo se crea una
+zona de relleno con el ancho indicado en esta propiedad.
+-->
+    <padding
+        android:bottom="40dp"
+        />
+<!--
+Size: Aquí indicaremos las dimensiones que tendrá nuestro shape,
+en en los atributos android:width y android:height.
+
+-->
+<size
+    android:width="200dp"
+    />
+<!--
+Solid: Aquí indicaremos un color sólido para rellenar nuestro shape.
+-->
+
+<!--
+Stroke: En esta etiqueta definimos un borde para nuestro shape,
+que consiste en una línea, que también puede ser discontinua. En las etiquetas .
+dashgap=espacio en blanco
+dashwidth=espacio pintado
+    -->
+<stroke
+    android:width="5dp"
+    android:color="@android:color/holo_red_dark"
+    android:dashGap="70dp"
+    android:dashWidth="55dp"
+
+    />
 
 </shape>
